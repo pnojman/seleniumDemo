@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ChromeBrowser" parallel="tests" thread-count="5">
+<listeners>
+		<listener class-name="com.selenium.utility.Listener"></listener>
+	</listeners>
+  <test name="ChromeTest">
+  <parameter name="browser" value="Chrome"></parameter>
+  <groups>
+  	<run>
+  		<include name="Smoke">
+  		</include>
+  	</run>
+  </groups>
+    <classes>
+     <class name="com.selenium.testcases.How2AutomateTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="FirefoxTest">
+  <parameter name="browser" value="Firefox"></parameter>
+  <groups>
+  	<run>
+  		<include name="Smoke">
+  		</include>
+  	</run>
+  </groups>
+    <classes>
+       <class name="com.selenium.testcases.How2AutomateTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FirefoxTest2">
+  <parameter name="browser" value="Firefox"></parameter>
+  <groups>
+  	<run>
+  		<include name="Smoke">
+  		</include>
+  	</run>
+  </groups>
+    <classes>
+      <class name="com.selenium.testcases.How2AutomateTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="ChromeTest2">
+  <parameter name="browser" value="Chrome"></parameter>
+  <groups>
+  	<run>
+  		<include name="Smoke">
+  		</include>
+  	</run>
+  </groups>
+    <classes>
+       <class name="com.selenium.testcases.How2AutomateTest"/>
+    </classes>
+  </test> <!-- Test -->
+    
+  
+</suite> <!-- Suite -->
